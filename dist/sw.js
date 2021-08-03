@@ -6,7 +6,7 @@ import { NetworkOnly } from 'workbox-strategies';
 import { CacheFirst } from 'workbox-strategies';
 
 // Ensure that /offline.html is part of your precache manifest!
-precacheAndRoute(self.__WB_MANIFEST);
+precacheAndRoute([{"revision":"3d6d447ca13bdd4ea4f0c38c72c5aa4d","url":"index.html"},{"revision":"36eda011fa9bee898cac49c528b4e393","url":"main.js"}]);
 
 registerRoute(
     ({request}) => request.destination === 'image',
